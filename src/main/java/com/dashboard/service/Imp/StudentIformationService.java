@@ -18,5 +18,20 @@ public class StudentIformationService implements IStudentInformationService{
 		return studentInfDao.getStudentInfo();
 	}
 
+	@Override
+	public void addStudentInfo(StudentInformation stdInfo) {
+		studentInfDao.addStudentInfo(stdInfo);
+	}
+
+	@Override
+	public void updateStudentInfo(StudentInformation std) {
+		studentInfDao.updateStudentInfo(std);
+	}
+
+	@Override
+	public void deleteStudentInfo(int id) {
+		studentInfDao.deleteStudent(id);
+	}
+
 
 }
